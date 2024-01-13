@@ -132,6 +132,8 @@ public class MatriculaTest {
         curso.setCodigo(codigo);
         curso.setDescricao("CURSO TESTE");
         curso.setNome("Curso de Java Backend");
+        curso.setDisciplina("Java");
+        curso.setValor(2000D);
         return cursoDAO.cadastrar(curso);
     }
 }

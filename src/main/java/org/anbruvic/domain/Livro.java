@@ -66,8 +66,8 @@ public class Livro {
         return disciplina;
     }
 
-    public void setDisciplina(String disciplia) {
-        this.disciplina = disciplia;
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
     }
 
     public Double getValor() {

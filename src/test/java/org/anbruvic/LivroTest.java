@@ -10,7 +10,6 @@ import org.junit.After;
 import org.junit.Test;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -141,6 +140,8 @@ public class LivroTest {
         curso.setCodigo(codigo);
         curso.setDescricao("CURSO TESTE");
         curso.setNome("Curso de Java Backend");
+        curso.setDisciplina("Java");
+        curso.setValor(2000D);
         return cursoDAO.cadastrar(curso);
     }
 }

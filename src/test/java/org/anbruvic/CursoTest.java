@@ -30,6 +30,8 @@ public class CursoTest {
         curso.setCodigo("A1");
         curso.setDescricao("CURSO TESTE");
         curso.setNome("Curso de Java Backend");
+        curso.setDisciplina("Java");
+        curso.setValor(2000D);
         curso = cursoDAO.cadastrar(curso);
 
         assertNotNull(curso);

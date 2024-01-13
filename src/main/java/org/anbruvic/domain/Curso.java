@@ -22,6 +22,12 @@ public class Curso {
     @Column(name = "DESCRICAO", length = 100, nullable = false)
     private  String descricao;
 
+    @Column(name = "DISCIPLINA", length = 30, nullable = false)
+    private String disciplina;
+
+    @Column(name = "VALOR", nullable = false)
+    private Double valor;
+
     @OneToMany(mappedBy = "curso")
     private List<Matricula> matriculas;
 
@@ -55,6 +61,22 @@ public class Curso {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getDisciplina() {
+        return disciplina;
+    }
+
+    public void setDisciplina(String disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    public Double getValor() {
+        return valor;
+    }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
     }
 
     public List<Matricula> getMatriculas() {
